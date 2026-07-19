@@ -53,7 +53,7 @@ public:
     {
         sampleRate = sr;
         lp.reset(); lp.prepare (sr);
-        formant.reset (sr, 0.0);
+        formant.reset();
     }
 
     void setParams (float cutoffHz, float resonance01, float character01)
